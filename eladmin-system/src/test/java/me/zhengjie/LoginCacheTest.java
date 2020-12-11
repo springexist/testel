@@ -1,5 +1,6 @@
 package me.zhengjie;
 
+import com.alibaba.fastjson.JSON;
 import me.zhengjie.modules.security.service.UserDetailsServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -31,4 +32,5 @@ public class LoginCacheTest {
         long end2 = System.currentTimeMillis();
         System.out.print("使用缓存：" + (end1 - start1) + "毫秒\n 不使用缓存：" + (end2 - start2) + "毫秒");
     }
+
 }
